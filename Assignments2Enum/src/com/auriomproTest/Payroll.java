@@ -1,7 +1,7 @@
 package com.auriomproTest;
 
 import com.auriomproModel.Employee;
-import com.auriomproModel.Employee.Roles;
+import com.auriomproModel.Roles;
 
 public class Payroll {
     private Employee[] employees;

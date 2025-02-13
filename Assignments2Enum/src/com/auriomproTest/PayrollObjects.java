@@ -1,7 +1,8 @@
 package com.auriomproTest;
 import java.util.Scanner;
+
 import com.auriomproModel.Employee;
-import com.auriomproModel.Employee.Roles;
+import com.auriomproModel.Roles;
 
 public class PayrollObjects {
     public static void main(String[] args) {
@@ -9,11 +10,11 @@ public class PayrollObjects {
         Payroll payroll = new Payroll(5); // Creating Payroll system with 5 slots
 
         // Adding employees dynamically
-        payroll.addEmployee(new Employee(101, "Alice", 80000, Employee.Roles.MANAGER));
-        payroll.addEmployee(new Employee(102, "Bob", 60000, Employee.Roles.DEVELOPER));
-        payroll.addEmployee(new Employee(103, "Charlie", 55000, Employee.Roles.DESIGNER));
-        payroll.addEmployee(new Employee(104, "David", 50000, Employee.Roles.TESTER));
-        payroll.addEmployee(new Employee(105, "Eve", 48000, Employee.Roles.HR));
+        payroll.addEmployee(new Employee(101, "Alice", 80000, Roles.MANAGER));
+        payroll.addEmployee(new Employee(102, "Bob", 60000,  Roles.DEVELOPER));
+        payroll.addEmployee(new Employee(103, "Charlie", 55000 ,Roles.DESIGNER));
+        payroll.addEmployee(new Employee(104, "David", 50000, Roles.TESTER));
+        payroll.addEmployee(new Employee(105, "Eve", 48000,Roles.HR));
 
         // Display all employees
         System.out.println("\nAll Employees and their Bonuses:");

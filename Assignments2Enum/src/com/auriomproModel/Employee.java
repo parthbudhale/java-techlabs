@@ -1,9 +1,9 @@
 package com.auriomproModel;
 
 public class Employee {
-	public enum Roles {
-		MANAGER, DEVELOPER, DESIGNER, TESTER, HR, NONE
-	}
+	
+	
+	
 
 	private int employeeId;
 	private String name;
