@@ -1,0 +1,9 @@
+package com.aurionpro.Model;
+
+public class Employee {
+	public String name;
+	public int employeeid ;
+	public double employeeSalary;
+	
+
+}

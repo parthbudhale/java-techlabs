@@ -1,0 +1,52 @@
+package com.aurionproTest;
+
+class Box {
+	 int width;
+	 int height;
+	 int depth;
+
+	 public Box() {
+
+	 }
+
+	 public void accept(int widthvalue, int heightvalue, int depthvalue) {
+	  width = widthvalue;
+	  height = heightvalue;
+	  depth = depthvalue;
+	 }
+
+	 public void display() {
+	  System.out.println("Width: " + width);
+	  System.out.println("Height: " + height);
+	  System.out.println("Depth: " + depth);
+	 }
+	}
+
+	class BoxWeight extends Box {
+	 int weight;
+
+	 public BoxWeight() {
+
+	 }
+
+	 public void acceptWeight(int weight) {
+	  this.weight = weight;
+	 }
+
+	 public void displayWeight() {
+	  System.out.println("Weight: " + weight);
+	 }
+	}
+
+	public class BoxTest {
+
+	 public static void main(String[] args) {
+
+	  BoxWeight boxWeight = new BoxWeight();
+	  boxWeight.acceptWeight(500);
+	  boxWeight.displayWeight();
+	  boxWeight.accept(10, 20, 30);
+	  boxWeight.display();
+	 }
+
+	}

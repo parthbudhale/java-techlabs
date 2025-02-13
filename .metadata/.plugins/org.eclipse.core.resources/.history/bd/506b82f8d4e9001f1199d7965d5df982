@@ -1,0 +1,73 @@
+package com.aurionpro.Test;
+
+import java.util.Scanner;
+
+import com.aurionpro.Model.BankAccount;
+import com.aurionpro.Model.InsufficientFundsException;
+
+public class ATMTest {
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        BankAccount[] accounts = {
+	            new BankAccount("123456", 1000),
+	            new BankAccount("789012", 500)
+	        };
+
+	        System.out.print("Enter account number: ");
+	        String inputAccount = scanner.nextLine();
+
+	        BankAccount userAccount = null;
+	        for (BankAccount account : accounts) {
+	            if (account.getAccountNumber().equals(inputAccount)) {
+	                userAccount = account;
+	                break;
+	            }
+	        }
+
+	        if (userAccount == null) {
+	            System.out.println("Invalid account number.");
+	            return;
+	        }
+
+	        while (true) {
+	            System.out.println("\nATM Menu:");
+	            System.out.println("1. Deposit");
+	            System.out.println("2. Withdraw");
+	            System.out.println("3. Check Balance");
+	            System.out.println("4. Exit");
+	            System.out.print("Choose an option: ");
+	            
+	            int choice = scanner.nextInt();
+
+	            try {
+	                switch (choice) {
+	                    case 1:
+	                        System.out.print("Enter deposit amount: ");
+	                        double depositAmount = scanner.nextDouble();
+	                        userAccount.deposit(depositAmount);
+	                        break;
+	                    case 2:
+	                        System.out.print("Enter withdrawal amount: ");
+	                        double withdrawAmount = scanner.nextDouble();
+	                        userAccount.withdraw(withdrawAmount);
+	                        break;
+	                    case 3:
+	                        userAccount.checkBalance();
+	                        break;
+	                    case 4:
+	                        System.out.println("Exiting...");
+	                        scanner.close();
+	                        return;
+	                    default:
+	                        System.out.println("Invalid choice. Try again.");
+	                }
+	            } catch (InsufficientFundsException e) {
+	                System.out.println(e.getMessage());
+	            }
+	        }
+	    }
+	}
+	
+
+

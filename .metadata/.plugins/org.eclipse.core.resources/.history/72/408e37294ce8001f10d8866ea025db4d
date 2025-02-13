@@ -1,0 +1,10 @@
+package com.aurionpro.Model;
+
+public class UpiPayments implements Payments {
+  
+	@Override
+	public void processPayments(double amount) {
+		
+		
+	}
+}

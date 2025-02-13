@@ -1,0 +1,38 @@
+package com.aurionpro.Test;
+
+import java.awt.Paint;
+import java.util.Scanner;
+
+public class PaymentSystem {
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.println("Enter payment amount: ");
+	        double amount = scanner.nextDouble();
+
+	        System.out.println("Choose Payment Method: 1. Credit Card  2. Debit Card  3. UPI");
+	        int choice = scanner.nextInt();
+
+	        Object payment = null;
+
+	        switch (choice) {
+	            case 1:
+	                payment = new CreditCardPayment();
+	                break;
+	            case 2:
+	                payment = new DebitCardPayments();
+	                break;
+	            case 3:
+	                payment = new UpiPayments();
+	                break;
+	            default:
+	                System.out.println("Invalid choice!");
+	                System.exit(0);
+	        }
+
+	        payment.processPayment(amount);
+	        scanner.close();
+	    }
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.aurionpro.Model;
+
+abstract class PartTimeEmployee extends Employees {
+	    private int hoursWorked;
+
+	    public PartTimeEmployee(String name, int id, double baseSalary, int hoursWorked) throws Exception {
+	        super(name, id, baseSalary);
+	        this.hoursWorked = hoursWorked;
+	    }
+
+	   
+
+		
+}
+
+

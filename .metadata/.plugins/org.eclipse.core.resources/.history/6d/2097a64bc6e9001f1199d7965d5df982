@@ -1,0 +1,25 @@
+package com.aurionpro.Model;
+
+abstract class Employees implements IPayable {
+    private String name;
+    private int id;
+    public double baseSalary;
+
+    public Employees(String name, int id, double baseSalary) throws Exception {
+        if (baseSalary < 0) {
+            throw new Exception("Base salary cannot be negative!");
+        }
+        this.name = name;
+        this.id = id;
+        this.baseSalary = baseSalary;
+    }
+
+    public void displayDetails() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Base Salary: " + baseSalary);
+    }
+
+	public double calculateSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

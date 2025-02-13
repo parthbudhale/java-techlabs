@@ -1,0 +1,8 @@
+package com.aurionpro.Model;
+
+public interface ATMOperations {
+	void withdraw(double amount) throws InsufficientFundsExecution;
+	void deposit(double amount);
+	void CheckBalance();
+
+}

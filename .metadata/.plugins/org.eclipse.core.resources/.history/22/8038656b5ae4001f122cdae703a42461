@@ -1,0 +1,34 @@
+package com.aurionpro;
+
+public class PersonReflection {
+	String name;
+	int RollNo;
+	double weight;
+	public PersonReflection()
+	{
+		
+	}
+	public PersonReflection(String name,int RollNo,double weight) {
+		this.name=name;
+		this.RollNo=RollNo;
+		this.weight=weight;
+		
+		
+	}
+	public void displayDetails()
+	{
+		
+	}
+	public void displayNumber() 
+	{
+		
+	}
+	public static void main(String[] args) {
+		//  Method1 --> getClass();
+		PersonReflection Person = new PersonReflection();
+		System.out.println(Person.getClass());
+		
+	}
+	
+
+}

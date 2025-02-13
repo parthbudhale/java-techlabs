@@ -1,0 +1,39 @@
+package com.aurionpro.Model;
+
+public  class Numbers implements ICalculator,ICalculator2 {
+	
+
+	@Override
+	public int add(int a, int b) {
+		
+		return a+b;
+	}
+
+	@Override
+	public int subtract(int a, int b) {
+		
+		return a-b;
+	}
+	
+
+	@Override
+	public void display() {
+		
+		
+	}
+
+	@Override
+	public int multiplication(int a, int b) {
+	
+		return a*b;
+	}
+
+	@Override
+	public double Divide(int a, int b) {
+		
+		return a%b;
+	}
+	
+	
+
+}

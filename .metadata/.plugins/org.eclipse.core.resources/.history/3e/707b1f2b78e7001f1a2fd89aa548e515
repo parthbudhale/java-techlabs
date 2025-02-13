@@ -1,0 +1,9 @@
+package com.aurionpromodel;
+
+public class Manager extends Person {
+	
+		
+		 public void displayManager() {
+			  System.out.println("This is Manager class");
+			 }
+			}

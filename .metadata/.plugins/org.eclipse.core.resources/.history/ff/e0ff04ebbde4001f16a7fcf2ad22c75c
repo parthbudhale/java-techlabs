@@ -1,0 +1,77 @@
+package com.auriomproModel;
+
+public class Employee {
+	enum Roles {
+		MANAGER, DEVELOPER, DESIGNER, TESTER, HR, NONE
+	}
+
+	private int EmployeeId;
+	private String name;
+	private double salary;
+	private Roles role;
+
+	public Employee() {
+		this.EmployeeId = 0;
+		this.name = "unknown";
+		this.salary = 0.0;
+		this.role = Roles.NONE;
+
+	}
+
+	public Employee(int EmployeeId, String name, double salary, Roles role) {
+		this.EmployeeId = EmployeeId;
+		this.name = name;
+		this.salary = salary;
+		this.role = role;
+	}
+
+	public void setEmployeeId(int EmployeeId) {
+		this.EmployeeId = EmployeeId;
+	}
+
+	public int getEmployeeId() {
+		return this.EmployeeId;
+
+	}
+
+	public void setName(String EmployeeId) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public double getSalary() {
+		return this.salary;
+
+	}
+
+	public void setRole(Roles role) {
+		this.role = role;
+	}
+
+	public Roles getRole() {
+		return this.role;
+	}
+		
+		// Method to calculate bonus
+	    public double calculateBonus() {
+	        switch (role) {
+	            case MANAGER:
+	                return salary * 0.20;
+	            case DEVELOPER:
+	            case DESIGNER:
+	                return salary * 0.15;
+	            default:
+	                return salary * 0.10;
+	        }
+
+	}
+
+}

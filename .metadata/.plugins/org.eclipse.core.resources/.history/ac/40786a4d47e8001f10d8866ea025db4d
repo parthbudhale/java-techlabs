@@ -1,0 +1,8 @@
+package com.aurionpro.Test;
+
+
+
+public class C implements B {
+	
+
+}

@@ -1,0 +1,6 @@
+package com.aurionpro.Model;
+
+public interface Payments {
+	void processPayments(double amount);
+
+}

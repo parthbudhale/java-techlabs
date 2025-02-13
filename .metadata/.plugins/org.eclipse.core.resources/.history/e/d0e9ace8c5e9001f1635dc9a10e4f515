@@ -1,0 +1,7 @@
+package com.aurionpro.Model;
+
+public interface IPayable {
+	double Calculatesalary();
+	
+
+}

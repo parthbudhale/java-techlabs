@@ -1,0 +1,16 @@
+package com.aurionpro.Model;
+
+
+public	class DebitCardPayments implements Payments {
+	  
+
+		@Override
+		public void processPayments(double amount) {
+			// TODO Auto-generated method stub
+			
+		}
+
+	
+	}
+
+

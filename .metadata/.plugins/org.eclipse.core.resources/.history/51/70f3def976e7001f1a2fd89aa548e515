@@ -1,0 +1,22 @@
+package com.aurionpromodel;
+
+public class Employee extends Person{
+	public Employee(String name, int age) {
+		super(name, age);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	int employeeId;
+	double salary;
+
+	
+
+	public void displayEmployee() {
+		
+		System.out.println("Employee ID: " + employeeId + ", Salary: " + salary);
+	}
+}
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.aurionpro.Tresurer&apos; to &apos;Treasurer&apos;&#x0D;&#x0A;- Original project: &apos;Day2.java&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.Tresurer&apos;&#x0D;&#x0A;- Renamed element: &apos;com.aurionpro.Treasurer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tresurer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.aurionpro{Tresurer.java[Tresurer" matchStrategy="1" name="Treasurer" qualified="false" references="true" similarDeclarations="false" stamp="1738491602443" textual="false" version="1.0"/>
+</session>
