@@ -1,6 +1,0 @@
-package com.aurionpro.Model;
-
- interface Payments {
-	void processPayments(double amount);
-
-}

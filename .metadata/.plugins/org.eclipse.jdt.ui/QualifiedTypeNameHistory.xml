@@ -7,4 +7,20 @@
     <fullyQualifiedTypeName name="com.aurionpro.Model.CreditCardPayment"/>
     <fullyQualifiedTypeName name="com.aurionpro.Model.DebitCardPayments"/>
     <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="com.model.SharedProducerConsumerResources"/>
+    <fullyQualifiedTypeName name="com.model.GoogleDrive"/>
+    <fullyQualifiedTypeName name="com.model.GoogleDriveAdapter"/>
+    <fullyQualifiedTypeName name="com.model.Internet"/>
+    <fullyQualifiedTypeName name="com.model.HomeTheatreFacade"/>
+    <fullyQualifiedTypeName name="com.model.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.model.LightOnCommand"/>
+    <fullyQualifiedTypeName name="com.model.LightOffCommand"/>
+    <fullyQualifiedTypeName name="com.model.Command"/>
+    <fullyQualifiedTypeName name="com.model.BaveragesTemplate"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
 </qualifiedTypeNameHistroy>

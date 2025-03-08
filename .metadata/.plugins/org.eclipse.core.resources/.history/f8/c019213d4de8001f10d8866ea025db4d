@@ -1,7 +1,0 @@
-package com.aurionpro.Model;
-
-class CreditCardPayment implements Payment {
-    public void processPayment(double amount) {
-        System.out.println("Payment of $" + amount + " made using Credit Card.");
-    }
-}
